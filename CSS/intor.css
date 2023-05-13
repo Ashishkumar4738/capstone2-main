@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.gradient-background {
+    background: linear-gradient(300deg, #0066ff, #ff4c68, #efa072);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-right: 2rem;
+}
+span{
+    color: orange;
+}
+.nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.left-intro {
+    width: 50%;
+}
+
+.left-intro h2 {
+    padding-left: 1rem;
+}
+
+.nav .nav-links {
+    align-items: center;
+}
+
+.nav .nav-links ul {
+    display: flex;
+    padding-left: 20px;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav .nav-links ul li {
+    padding-right: 20px;
+}
+
+.nav .nav-links ul li a {
+    color: black;
+}
+
+.nav .nav-links ul li a:hover {
+    color: blue;
+}
+
+.second-box {
+    margin-top: 20px;
+
+}
+
+.second-box .first-image img {
+    display: block;
+    margin: auto;
+}
+
+@media (max-width:992px) {
+    .second-box .first-image img {
+        display: block;
+        margin: 0%;
+    }
+}
+
+.second-box .first-heading h2 {
+    font-size: 4rem;
+}
+
+.second-box .first-heading p {
+    font-size: 1.3rem;
+
+}
+.my-4 {
+    margin-top: 1.5rem!important;
+    margin-bottom: 0rem!important;
+}

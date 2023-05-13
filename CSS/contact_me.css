@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+.background {
+    background: rgba(0, 0, 0, 0.7)url(../assests/background2.jpg);
+    background-size: cover;
+    background-blend-mode:color;
+}
+
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-right: 2rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+}
+.left-intro {
+    width: 30%;
+}
+
+.left-intro h2 {
+    padding-left: 1rem;
+}
+
+.nav .nav-links {
+    align-items: center;
+}
+
+.nav .nav-links ul {
+    display: flex;
+    padding-left: 20px;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav .nav-links ul li {
+    padding-right: 20px;
+}
+
+.nav .nav-links ul li a {
+    color: white;
+}
+
+.nav .nav-links ul li a:hover {
+    color: blue;
+}
+
+.total .left{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.total .left .first{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+.total .left .first img{
+
+    width: 1rem;
+    height: 1rem;
+    margin-top: 5px;
+   background-color: rgb(255, 255, 255);
+   padding: 2px;
+}
+.total .left .first .inner h5{
+    color: rgb(36, 116, 214);
+    font-size: 1.7rem;
+    
+}
+.total .left .first .inner p{
+    font-size: 1rem;
+}
+.total .left .first .inner {
+    margin-left: 1rem;
+    
+}
+.total .rigth{
+    margin-bottom: 2rem
+}
+#send-message{
+    margin-bottom: 2rem;
+}

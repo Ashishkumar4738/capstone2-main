@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #0066ff, #ff4c68, #efa072);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+}
+
+
+.main-img {
+    height: 3rem;
+}
+
+.btn-primary {
+    color: white;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+span {
+    color: orange;
+    font-weight: 400;
+}
+.nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.left-intro {
+    width: 50%;
+}
+
+.left-intro h2 {
+    padding-left: 1rem;
+}
+
+.nav .nav-links {
+    align-items: center;
+}
+
+.nav .nav-links ul {
+    display: flex;
+    padding-left: 20px;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav .nav-links ul li {
+    padding-right: 20px;
+}
+
+.nav .nav-links ul li a {
+    color: white;
+}
+
+.nav .nav-links ul li a:hover {
+    color: blue;
+}
+
+.py-3 {
+    padding-top: 1rem !important;
+    /* padding-bottom: 0rem!important; */
+}
+
+.my-4 {
+    margin-bottom: 0rem !important;
+}
+
+.img-fluid {
+    height: 10%;
+}

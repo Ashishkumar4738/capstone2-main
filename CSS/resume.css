@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.background {
+    background: rgba(0, 0, 0, 0.7)url(../assests/background2.jpg);
+    background-size: cover;
+    background-blend-mode:color;
+}
+
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-right: 2rem;
+}
+
+span {
+    color: orange;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.left-intro {
+    width: 30%;
+}
+
+.left-intro h2 {
+    padding-left: 1rem;
+}
+
+.nav .nav-links {
+    align-items: center;
+}
+
+.nav .nav-links ul {
+    display: flex;
+    padding-left: 20px;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav .nav-links ul li {
+    padding-right: 20px;
+}
+
+.nav .nav-links ul li a {
+    color: white;
+}
+
+.nav .nav-links ul li a:hover {
+    color: blue;
+}
+
+@media (min-width: 1200px) {
+
+    .h1,
+    h1 {
+        font-size: 4.5rem;
+        color: white;
+    }
+}
+
+.name-heading {
+    width: 100%;
+    display: flex;
+}
+
+.name-heading .space {
+
+    width: 30%;
+}
+
+.name-heading .content {
+    /* background-color:#efa072; */
+    width: 70%;
+}
+
+.below-heading {
+    width: 100%;
+    display: flex;
+
+}
+
+.below-heading .left-info {
+    width: 30%;
+}
+
+.below-heading .left-info img {
+    width: 50%;
+    mix-blend-mode: initial;
+    margin-left: 2rem;
+    border-radius: 120px;
+}
+
+.below-heading .left-info .phone {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+
+}
+
+.below-heading .left-info .cont {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.below-heading .left-info .phone img {
+    margin-top: 1rem;
+    background-color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.below-heading .left-info .cont img {
+
+    background-color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.below-heading .left-info .phone p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.below-heading .left-info .cont p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.below-heading .left-info .skills h2{
+    color: white;
+}
+.below-heading .left-info .skills ul li{
+    color: white;
+}
+
+.below-heading .right-info {
+    width: 70%;
+    background-color: white;
+}
+
+.below-heading h2 {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    color: black;
+}
+
+.below-heading .right-info p {
+    width: 60%;
+    margin-left: 3rem;
+    
+    color: black;
+}
+
+.below-heading .left-info .cont p a{
+    color: white;
+    font-size: 1rem;
+}
+
+.below-heading ul {
+    list-style: disc;
+    margin-left: 3rem;
+    color: black;
+}
+
+.below-heading ul li {
+    color: black;
+}
+@media(min-width:350px) and (max-width:1000px) {
+    .below-heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .name-heading .content h1{
+        color: white;
+        font-size: 5rem;
+
+    }
+}
