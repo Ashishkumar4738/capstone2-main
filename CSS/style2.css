@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    color: white;
 }
 
 .gradient-background {
@@ -98,4 +99,8 @@ span {
 
 .img-fluid {
     height: 10%;
+}
+.text-body-secondary {
+    --bs-text-opacity: 1;
+    color: rgb(255 255 255 / 75%)!important;
 }
