@@ -71,7 +71,9 @@ span {
         font-size: 4.5rem;
         color: white;
     }
+    
 }
+
 
 .name-heading {
     width: 100%;
@@ -96,6 +98,7 @@ span {
 
 .below-heading .left-info {
     width: 30%;
+    
 }
 
 .below-heading .left-info img {
@@ -196,5 +199,20 @@ span {
         color: white;
         font-size: 5rem;
 
+    }
+    .below-heading .left-info .first-image{
+        margin-left:10rem ;
+    }
+    .below-heading .left-info{
+        width: 90%;
+
+    }
+    .below-heading .left-info .small{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .below-heading .right-info{
+        width: 90%;
     }
 }
