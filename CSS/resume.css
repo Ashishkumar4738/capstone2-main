@@ -210,6 +210,17 @@ span {
     .below-heading .left-info .small{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .below-heading .left-info .small .phone p{
+        font-size: 1.5rem;
+    }
+    .below-heading .left-info .small .cont a{
+        font-size: 1.5rem;
+    }
+    .below-heading .left-info .small .cont p{
+        font-size: 1.5rem;
     }
     
     .below-heading .right-info{
