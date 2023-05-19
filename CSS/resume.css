@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
 
 }
 
@@ -159,6 +160,7 @@ span {
 .below-heading .right-info {
     width: 70%;
     background-color: white;
+    opacity: 0.7;
 }
 
 .below-heading h2 {
