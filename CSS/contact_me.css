@@ -29,11 +29,12 @@ a {
 
 }
 .left-intro {
-    width: 30%;
+    width: 40%;
 }
 
 .left-intro h2 {
     padding-left: 1rem;
+    font-size: 3rem;
 }
 
 .nav .nav-links {
@@ -53,6 +54,7 @@ a {
 
 .nav .nav-links ul li a {
     color: white;
+    font-size:1.6rem;
 }
 
 .nav .nav-links ul li a:hover {
