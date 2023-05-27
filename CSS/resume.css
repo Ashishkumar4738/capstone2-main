@@ -145,12 +145,14 @@ span {
     margin-top: 1.5rem;
     font-size: 1rem;
     color: white;
+    margin-left: 10px;
 }
 
 .below-heading .left-info .cont p {
     margin-top: 1rem;
     font-size: 1rem;
     color: white;
+    margin-left: 10px;
 }
 
 .below-heading .left-info .skills h2{
@@ -220,12 +222,14 @@ span {
     }
     .below-heading .left-info .small .phone p{
         font-size: 1.5rem;
+        margin-left: 10px;
     }
     .below-heading .left-info .small .cont a{
         font-size: 1.5rem;
     }
     .below-heading .left-info .small .cont p{
         font-size: 1.5rem;
+        margin-left: 10px;
     }
     
     .below-heading .right-info{

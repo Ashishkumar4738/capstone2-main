@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
 
 }
 .gradient-background {
@@ -67,7 +68,7 @@ span{
 }
 
 .nav .nav-links ul li a {
-    color: black;
+    color: white;
 }
 
 .nav .nav-links ul li a:hover {
@@ -102,4 +103,7 @@ span{
 .my-4 {
     margin-top: 1.5rem!important;
     margin-bottom: 0rem!important;
+}
+.nav-item{
+    color: white;
 }
