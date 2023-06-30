@@ -207,8 +207,14 @@ span {
         font-size: 5rem;
 
     }
+    .below-heading .left-info img {
+        width: 40%;
+        mix-blend-mode: initial;
+        
+        border-radius: 120px;
+    }
     .below-heading .left-info .first-image{
-        margin-left:10rem ;
+        margin-left:27% ;
     }
     .below-heading .left-info{
         width: 90%;
