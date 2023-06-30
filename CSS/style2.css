@@ -85,12 +85,12 @@ span {
 }
 
 .nav .nav-links ul li {
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 .nav .nav-links ul li a {
     color: white;
-    font-size:1.6rem;
+    font-size:1.4rem;
 }
 
 .nav .nav-links ul li a:hover {
@@ -116,6 +116,12 @@ span {
 @media (min-width:300px) and (max-width:1000px){
     .nav .nav-links ul li a {
         color: white;
-        font-size:2rem;
+        font-size:1.3rem;
+    }
+    .nav .nav-links {
+        width: 50%;
+        align-items: right;
+        float: right;
+        margin-left: auto;
     }
 }
