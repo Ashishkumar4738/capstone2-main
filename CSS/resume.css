@@ -40,7 +40,7 @@ span {
 
 .left-intro h2 {
     padding-left: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .nav .nav-links {
@@ -60,7 +60,7 @@ span {
 
 .nav .nav-links ul li a {
     color: white;
-    font-size:1.6rem;
+    font-size:1.2rem;
 }
 
 .nav .nav-links ul li a:hover {
@@ -71,7 +71,7 @@ span {
 
     .h1,
     h1 {
-        font-size: 4.5rem;
+        font-size: 4rem;
         color: white;
     }
     
@@ -170,7 +170,7 @@ span {
 
 .below-heading h2 {
     margin-left: 3rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     color: black;
 }
 
