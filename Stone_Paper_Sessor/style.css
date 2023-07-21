@@ -1,0 +1,103 @@
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+}
+
+
+.main-img {
+    height: 3rem;
+}
+
+.btn-primary {
+    color: white;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+span {
+    color: orange;
+    font-weight: 400;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    
+
+}
+  
+.lead{
+    text-align: justify;
+}
+
+.left-intro {
+    width: 40%;
+    
+}
+
+.left-intro h2 {
+    padding-left: 1rem;
+    font-size: 3rem;
+}
+
+.nav .nav-links {
+    align-items: center;
+}
+
+.nav .nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.nav .nav-links ul li {
+    padding-right: 1rem;
+}
+
+.nav .nav-links ul li a {
+    color: white;
+    font-size:1.4rem;
+}
+
+.nav .nav-links ul li a:hover {
+    color: blue;
+}
+
+.py-3 {
+    padding-top: 1rem !important;
+    /* padding-bottom: 0rem!important; */
+}
+
+.my-4 {
+    margin-bottom: 0rem !important;
+}
+
+.img-fluid {
+    height: 10%;
+}
+.text-body-secondary {
+    --bs-text-opacity: 1;
+    color: rgb(255 255 255 / 75%)!important;
+}
+@media (min-width:300px) and (max-width:1000px){
+    .nav .nav-links ul li a {
+        color: white;
+        font-size:1.3rem;
+    }
+    .nav .nav-links {
+        width: 50%;
+        align-items: right;
+        float: right;
+        margin-left: auto;
+    }
+}

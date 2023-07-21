@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+body{
+    background-image: url(../assests/images/background.png);
+    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rulesHead{
+    text-align: center;
+    margin: 20px;
+    font-size: 5rem;
+    color: rgb(132, 247, 61);
+}
+.rulesList li{
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px;
+}
+@media (max-width:600px){
+    .rulesHead{
+        font-size: 3rem;
+        color: rgb(145, 246, 86);
+    }
+}
