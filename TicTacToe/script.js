@@ -1,6 +1,5 @@
-var userInput = [];
-var computerInput = [];
-var computerNumber = Math.floor(Math.random() * 9 + 1);
+var count=0;
+var loopCount=0;
 var whichTurn = "x";
 $("span").text("Turn for "+whichTurn);
 function turn() {
@@ -11,6 +10,7 @@ function turn() {
 
 function resultCalculate() {
     let inputText = document.getElementsByClassName("box");
+    var flag = 0;
 
     var arr = [
         [0, 1, 2],
@@ -23,8 +23,13 @@ function resultCalculate() {
         [2, 4, 6],
     ];
     arr.forEach(e => {
+        
+        loopCount++;
+        console.log(loopCount+" e");
+        console.log(count+" count");
         if ((inputText[e[0]].innerText === inputText[e[1]].innerText) && (inputText[e[2]].innerText === inputText[e[1]].innerText) && inputText[e[0]].innerText !== "") {
             $(".box").off("click");
+            flag =1;
             $("span").text(inputText[e[0]].innerText + " won"+"");
             $("span").addClass("win");
             playAudio("win-sound");
@@ -33,14 +38,23 @@ function resultCalculate() {
             setTimeout(() => {
                 location.reload(true);
             }, 5000);
+        }else if(flag==0&&loopCount==8&&count==9){
+            $("span").text("No one win");
+            $("span").addClass("win");
+            setTimeout(() => {
+                location.reload(true);
+            }, 1000);
         }
-    })
+    });
+    
 }
 
 //game logic
 $(".box").on("click", function () {
    
     if ($("#" + this.id).text() == "") {
+        loopCount=0;
+        count++;
         playAudio("click");
         $("#" + this.id).text(whichTurn);
         whichTurn = turn();
