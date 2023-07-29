@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    display: flex;
+
+    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.containerGame {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 5px;
+
+    background-color: black;
+}
+
+.box {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.right  {  
+    margin: 30px;
+    margin-top: 0px;
+    padding: 30px;
+}
+.box:hover{
+    background-color: rgb(237, 224, 243);
+    
+}
+@media (max-width:600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        margin: 0px;
+        margin-top: 10px;
+    }
+}
+img{
+    display:none;
+    /* visibility: hidden; */
+}
+a{
+    margin-left: 5px;
+}
+.win{
+    font-weight: bolder;
+    font-size: 250%;
+
+}
