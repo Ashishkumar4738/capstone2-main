@@ -32,7 +32,6 @@
 @media (max-width:600px){
     .first{
         width: 100%;
-        background-color: red;
         margin: auto;
         display: flex;
         flex-direction: column;
