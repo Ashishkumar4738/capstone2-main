@@ -195,6 +195,9 @@ span {
 .below-heading ul li {
     color: black;
 }
+p a:hover{
+    color: rgb(255, 234, 0) !important;
+}
 @media(min-width:350px) and (max-width:1000px) {
     .below-heading{
         display: flex;
