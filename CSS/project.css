@@ -1,49 +1,83 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-.first{
-    width: 98%;
+body{
+    margin-bottom: 20px;
+}
+.first {
+    width: 80%;
+    height: min-content;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    border-radius: 20px;
 }
-.leftContent{
+
+.leftContent {
+    margin: 20px;
     width: 30%;
 }
-.leftContent a img{
-    width: 100%;
-   
+
+.leftContent a img {
+    width: 70%;
+    margin: auto;
+
+
 }
-.rightContent{
+
+.rightContent {
     width: 50%;
     margin: auto;
 }
-.rightContent h1{
+
+.rightContent h1 {
     text-align: center;
     margin: 10px;
     font-size: 3rem;
     font-weight: bolder;
 }
-.rightContent p{
+
+.rightContent p {
     font-size: 1.5rem;
 }
-@media (max-width:600px){
-    .first{
-        width: 100%;
+
+@media (max-width:905px) {
+    body {
+        margin-bottom: 40px;
+    }
+
+    .first {
+        width: 95%;
         margin: auto;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 10px;
-       
+        margin-bottom: 20px;
+        border-top: 10px solid black;
+        border-bottom: 10px solid black;
+        border-radius: 20px;
+
     }
-    .leftContent{
-        width: 95%;
+
+    .leftContent {
+        width: 70%;
         margin: auto;
     }
-    .rightContent{
+    .leftContent a{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        
+    }
+    
+    
+
+    .rightContent {
         width: 95%;
         margin: auto;
 
