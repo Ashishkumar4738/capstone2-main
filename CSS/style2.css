@@ -124,4 +124,12 @@ span {
         float: right;
         margin-left: auto;
     }
+    .nav .nav-links ul {
+        display: flex;
+        padding-left: 20px;
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
 }

@@ -1,0 +1,114 @@
+*{
+    color: black;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    /* background-color: rgb(212, 207, 200); */
+}
+.nav{
+    background-color: #63e9ca;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.but{
+    width: max-content;
+    margin: auto;
+    border-radius: 20px;
+    padding: 5px;
+    animation: mymove 7s infinite;
+}
+.container button{
+    display: block;
+    margin: auto;
+    height: 2rem;
+    color: black;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    
+}
+@keyframes mymove {
+0% {
+background-color: #64fb19;
+}
+50% {
+background-color: #ebeb2a;
+}
+100% {
+background-color: #a1ed2f;
+}
+}
+
+.grid {
+    display: grid;
+    /*grid-template-rows: repeat(3,360px);
+    grid-template-columns: repeat(3,360px);*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: black;
+    width: 466px;
+    height: 449px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* overflow: hidden; */
+
+}
+
+.first {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    background-color: black;
+}
+
+input {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+input:hover {
+    background-color: antiquewhite;
+    border: none;
+    outline: none;
+
+}
+
+p {
+    background-color: white;
+}
+@media(max-width:600px){
+    .grid {
+        display: grid;
+        /*grid-template-rows: repeat(3,360px);
+        grid-template-columns: repeat(3,360px);*/
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 5px;
+        background-color: black;
+        width: 316px;
+        height: 299px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        /* overflow: hidden; */
+    
+    }
+    input {
+        width: 25px;
+        height: 25px;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bolder;
+    }
+}
