@@ -44,6 +44,61 @@ $(document).ready(function () {
     return true;
   }
 
+  function check(arr) {
+    for (let row = 0; row < 9; row++) {
+      for (let col = 0; col < 9; col++) {
+        if (arr[row][col] !== 0) {
+          for (let i = col + 1; i < 9; i++) {
+            if (arr[row][i] === arr[row][col]) {
+              console.log("row " + row + " i " + i);
+              console.log("col " + col);
+              let id1 = String(i);
+              let id2 = String(col);
+              let i1 = String(row);
+              let i22 = i1 + id1;
+              let id = row + id2;
+              $("#" + id).addClass("error");
+              $("#" + i22).addClass("error");
+              return false;
+            }
+          } //for
+          for (let i = row + 1; i < 9; i++) {
+            if (arr[i][col] === arr[row][col]) {
+              let id1 = String(i);
+              let id2 = String(col);
+              let i1 = String(row);
+              let i2 = String(col);
+              let i22 = i1 + i2;
+              let id = id1 + id2;
+              $("#" + id).addClass("error");
+              $("#" + i22).addClass("error");
+              return false;
+            }
+          }
+          let sr = parseInt(row / 3) * 3;
+          let sc = parseInt(col / 3) * 3;
+          for (let i = sr; i < sr + 3; i++) {
+            for (let j = sc; j < sc + 3; j++) {
+              if (i !== row && j !== col && arr[i][j] === arr[row][col]) {
+                let id1 = String(i);
+                let id2 = String(j);
+                let i1 = String(row);
+                let i2 = String(col);
+                let i22 = i1 + i2;
+                let id = id1 + id2;
+                $("#" + id).addClass("error");
+                $("#" + i22).addClass("error");
+                return false;
+              }
+            }
+          }
+        }
+      }
+      //for row
+    }
+    return true;
+  }
+
   function sudeko(arr, row, col) {
     if (row === 9) {
       return true;
@@ -63,7 +118,7 @@ $(document).ready(function () {
         arr[row][col] = digit;
         //console.log(arr);
         if (sudeko(arr, nextRow, nextCol)) {
-          //console.log(arr);
+          console.log(arr);
           return true;
         }
 
@@ -75,7 +130,8 @@ $(document).ready(function () {
   }
 
   function main() {
-    if (sudeko(arr, 0, 0)) {
+    if(check(arr)){
+      if (sudeko(arr, 0, 0)) {
       for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr[0].length; j++) {
           // console.log("#"+i+""+j)
@@ -85,8 +141,11 @@ $(document).ready(function () {
           $("#" + id).attr("placeholder", arr[i][j]);
         }
       }
-    } else {
-      confirm("Solution not possible");
+    } 
+    }
+    else {
+      playAudio();
+      alert("Solution not possible");
     }
     $("input").off("click");
 
@@ -94,12 +153,16 @@ $(document).ready(function () {
   }
   $("button").on("click", main);
   $("input").on("keypress", function (event) {
-    //console.log(event.key);
     console.log(event.key);
-    if(parseInt(this.value)) alert("Number must be lie between 1 to 9");
-    
+    // console.log(event.key);
+    if (parseInt(this.value)) alert("Number must be lie between 1 to 9");
+
     let i = parseInt(this.id[0]);
     let j = parseInt(this.id[1]);
     arr[i][j] = parseInt(event.key);
   });
+  function playAudio() {
+    let audio = new Audio("../TicTacToe/assests/wrong.mp3");
+    audio.play();
+  }
 });
