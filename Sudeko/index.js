@@ -130,6 +130,7 @@ $(document).ready(function () {
   }
 
   function main() {
+    $("input").off("keypress");
     if(check(arr)){
       if (sudeko(arr, 0, 0)) {
       for (let i = 0; i < arr.length; i++) {
@@ -147,7 +148,7 @@ $(document).ready(function () {
       playAudio();
       alert("Solution not possible");
     }
-    $("input").off("click");
+    
 
     console.log(arr);
   }

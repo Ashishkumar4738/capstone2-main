@@ -1,13 +1,17 @@
 *{
-    color: black;
+    
+    margin: 0px;
 }
-.container {
+.container1 {
     width: 100%;
     margin: auto;
-    /* background-color: rgb(212, 207, 200); */
+    margin-top: 0px;
+    height: 100vh;
+    background-color: rgb(212, 207, 200);
 }
 .nav{
     background-color: #63e9ca;
+    margin-bottom: 0px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -21,7 +25,7 @@ input::-webkit-inner-spin-button {
     padding: 5px;
     animation: mymove 7s infinite;
 }
-.container button{
+.container1 button{
     display: block;
     margin: auto;
     height: 2rem;
@@ -55,7 +59,7 @@ background-color: #a1ed2f;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
-    background-color: black;
+    background-color: rgb(8, 8, 8);
     width: 466px;
     height: 449px;
     margin: auto;
@@ -70,7 +74,7 @@ background-color: #a1ed2f;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 3px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 input {
@@ -79,6 +83,7 @@ input {
     font-size: 1.3rem;
     text-align: center;
     font-weight: bolder;
+    color: black;
 }
 
 input:hover {
@@ -95,7 +100,9 @@ p {
     .grid {
         display: grid;
         /*grid-template-rows: repeat(3,360px);
+        
         grid-template-columns: repeat(3,360px);*/
+        background-color: #63e9ca;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr 1fr;
         gap: 5px;
